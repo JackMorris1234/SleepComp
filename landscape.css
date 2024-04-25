@@ -103,12 +103,16 @@ audio {
     
     #main_nav li:first-child{
         -webkit-border-top-left-radius: 8px;
+        border-top-left-radius: 8px;
         -webkit-border-top-right-radius: 8px;
+        border-top-right-radius: 8px;
     }
      
     #main_nav li:last-child{
         -webkit-border-bottom-left-radius: 8px;
+        border-bottom-left-radius: 8px;
         -webkit-border-bottom-right-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 
     nav li:active {
@@ -128,8 +132,11 @@ audio {
        button.back {
         /*These lines override the previous styling of buttons*/
         -webkit-border-image: url("greyButton.png") 0 14 0 14 stretch;
+        border-image: url("greyButton.png") 0 14 0 14 stretch;
         width:60px;
         height: 30px;
+        background-color: #073763 ;border-color: #073763;
+        border-radius: 3px;
          
         /*These lines position the back button inside the header*/
         position:absolute;

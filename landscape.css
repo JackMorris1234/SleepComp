@@ -1,9 +1,9 @@
 header {
     font-family: Futura, Trebuchet MS;
     font-weight: bold condensed;
-    color: #432528; 
+    color: #8b6f8f; 
     font-size: 25px;
-    background-color: #725558;
+    background-color: #1b1e44;
     text-align: center;
     
    }
@@ -11,17 +11,17 @@ header {
    body {
     font-family: Futura, Trebuchet MS;
     font-weight: bold condensed;
-    color: #5e282d; 
+    color: #8b6f8f; 
     font-size: 25px;
     text-align: center;
-    background-color: #725558;
+    background-color: #1b1e44;
     
    }
 
    h1 {
     font-family: Futura, Trebuchet MS;
     font-weight: bold condensed;
-    color: #471f23; 
+    color: #8b6f8f; 
     font-size: 30px;
     text-align: center;
     
@@ -72,9 +72,9 @@ audio {
     #WPI{
         /*center the image*/
         display: block; 
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        /*margin-left: auto;
+        margin-right: auto;*/
     }
 
     
@@ -86,9 +86,9 @@ audio {
     }
      
     #main_nav ul li {
-        background-color: #fff;
+        background-color: #073763;
         border: 1px solid #999;
-        color: #222;
+        color: #8b6f8f;
         display: block;
         margin-bottom: -1px;
         padding: 12px 10px;
@@ -96,6 +96,7 @@ audio {
      
     #main_nav ul li a{
         text-decoration: none;
+        color: #8b6f8f;
       }
       
     /* add traditional rounded corners to the navigation menu*/

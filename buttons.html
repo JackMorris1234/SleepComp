@@ -17,10 +17,10 @@
     <header class="secondary"> Create or Join a Group!!</header>
     <button class="back" onclick="location.href='index.html';">Back</button>
     <div id="buttons">
-       <!-- <button id="alertButton" onclick="alert('welcome!');">Alert</button> -->
+        <button id="alertButton" onclick="promptJoinButtonClicked();">Join a Group</button>
         <button id="promptButton" onclick="promptButtonClicked();">Create A Group</button>
         <button id="confirmationButton" onclick="confirmButtonClicked();">Confirm Created Group</button>
-        <button id="changeButton" onclick="changeButtonClicked()">Change bike</button> 	
+        <!--<button id="changeButton" onclick="changeButtonClicked()">Change bike</button> 	-->
     </div> 	
     <div id="content"> 	  
         <img id="bikeImg" src="">
@@ -54,7 +54,7 @@
 
 		            //retrieve the <img> object from the DOM and set its src attribute
 		            var img=document.getElementById("bikeImg");
-		            img.src="bike1.jpg";
+		            img.src="congrats.jpg";
 
 		            //create a new <p> element and set its content
 		            var p=document.createElement("p");   	
@@ -62,8 +62,25 @@
                     //retreive from dom
                     var d=document.getElementById("choicelist");
 		            d.appendChild(p); 
-                    document.getElementById("changeButton").style.visibility="visible"; 
+                   //document.getElementById("changeButton").style.visibility="visible"; 
 	                }
+            }
+            function promptJoinButtonClicked(){
+                /*Prompt displays a message and returns a string depending on what the user has entered. It can be used for simple input. We stored the returned string in a variable.*/  
+            var destination=prompt("What is the join code of your group?");
+            //if the user entered a non-empty string executes the following
+            if(destination !== ""){
+                /*retrieve the element named choicelist from the DOM*/  
+                var p=document.getElementById("choicelist");
+                /*set its innerHTML attribute*/ 	
+                p.innerHTML="You have successfully joined a group";  
+                /*create a brand new element and sets its innerHTML value. Note that it is not yet inserted in the DOM.*/
+                // var li=document.createElement("li"); 	
+                //li.innerHTML=destination;
+                /*Retrieve an element from the DOM. We then add our new element as a child to this element.*/
+                //var ul=document.getElementById("orderedBike");
+                //ul.appendChild(li); 
+            }
             }
             function initBody() {
 	            // retrieve the changeButton element from the DOM and hide it

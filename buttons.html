@@ -14,12 +14,12 @@
 </head>
 
 <body onload="initBody();">   
-    <header class="secondary"> Reserve your bike</header>
+    <header class="secondary"> Create or Join a Group!!</header>
     <button class="back" onclick="location.href='index.html';">Back</button>
     <div id="buttons">
-        <button id="alertButton" onclick="alert('welcome!');">Alert</button>
-        <button id="promptButton" onclick="promptButtonClicked();">Prompt</button>
-        <button id="confirmationButton" onclick="confirmButtonClicked();">Confirm</button>
+       <!-- <button id="alertButton" onclick="alert('welcome!');">Alert</button> -->
+        <button id="promptButton" onclick="promptButtonClicked();">Create A Group</button>
+        <button id="confirmationButton" onclick="confirmButtonClicked();">Confirm Created Group</button>
         <button id="changeButton" onclick="changeButtonClicked()">Change bike</button> 	
     </div> 	
     <div id="content"> 	  
@@ -28,9 +28,10 @@
         <ul id="orderedBike"> </ul>    
     </div>
     <script>
+        
         function promptButtonClicked() {     	
             /*Prompt displays a message and returns a string depending on what the user has entered. It can be used for simple input. We stored the returned string in a variable.*/  
-            var destination=prompt("Where would you like to ride?");
+            var destination=prompt("What is the name of your group?");
             //if the user entered a non-empty string executes the following
             if(destination !== ""){
                 /*retrieve the element named choicelist from the DOM*/  
@@ -57,7 +58,7 @@
 
 		            //create a new <p> element and set its content
 		            var p=document.createElement("p");   	
-		            p.innerHTML="You are bike ready!";
+		            p.innerHTML="Your Group Has Been Created!";
                     //retreive from dom
                     var d=document.getElementById("choicelist");
 		            d.appendChild(p); 
